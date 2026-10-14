@@ -65,6 +65,7 @@ def first_existing(*paths):
 DATA_PATH = os.environ.get(
     "NATL60_PATH",
     first_existing(
+        SCRIPT_DIR / "data" / "NATL60_GulfStream_ssh.nc",
         SCRIPT_DIR / "NATL60_GulfStream_ssh.nc",
         "/kaggle/input/datasets/youssefoubari/natl60-gulf-stream-ssh/NATL60_GulfStream_ssh.nc",
         "C:/Users/gerv9/Desktop/gumbell/data/NATL60-CJM165-daily-reg-1_20.nc",
